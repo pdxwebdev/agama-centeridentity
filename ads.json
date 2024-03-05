@@ -1,1 +1,19 @@
-{}
+{
+    "secretlocationauth": {
+        "projectName": "secretlocationauth",
+        "description": "Authenticate by selecting a secret location on a map",
+        "type": "community",
+        "author": "pdxwebdev",
+        "version": "0.0.1",
+        "authorWebsite": "https://github.com/pdxwebdev/centeridentityagama",
+        "githubUri": "https://github.com/pdxwebdev/centeridentityagama",
+        "license": "apache-2.0",
+        "lastUpdated": "1709620873942",
+        "tags": [
+            "openid-connect",
+            "authentication"
+        ],
+        "noDirectLaunch": [],
+        "configs": {}
+    }
+}
