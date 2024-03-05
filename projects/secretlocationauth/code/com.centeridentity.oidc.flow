@@ -1,5 +1,5 @@
 // OpenId-based inbound identity flow
-Flow org.gluu.inbound.openid
+Flow com.centeridentity.oidc
      Basepath ""
      Configs conf
 obj = { providers: conf }
