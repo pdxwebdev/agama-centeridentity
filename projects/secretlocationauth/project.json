@@ -1,0 +1,51 @@
+{
+  "projectName": "centeridentityagama",
+  "description": "Authentication using secret locations via OIDC",
+  "type": "community",
+  "author": "Matthew Vogel",
+  "version": "1.2.0",
+  "authorWebsite": "https://centeridentity.com",
+  "githubUri": "https://github.com/pdxwebdev/centeridentityagama",
+  "license": "apache-2.0",
+  "lastUpdated": "1699278900783",
+  "tags": ["openid-connect", "jans"],
+  "noDirectLaunch": [
+    "io.jans.inbound.oauth2.AuthzCode",
+    "io.jans.inbound.oauth2.AuthzCodeWithUserInfo"
+  ],
+  "configs": {
+    "com.centeridentity.oidc": {
+      "com.centeridentity.oidc": {
+        "CenterIdentity": {
+          "host": "https://centeridentity.com",
+          "dcr": {
+            "enabled": true,
+            "useCachedClient": true
+          },
+          "oauth": {
+            "scopes": ["openid"]
+          },
+          "provision": {
+            "uidPrefix": "gluu-",
+            "attribute": "sub"
+          }
+        },
+        "Github": {
+          "oauth": {
+            "authzEndpoint": "https://github.com/login/oauth/authorize",
+            "tokenEndpoint": "https://github.com/login/oauth/access_token",
+            "userInfoEndpoint": "https://api.github.com/user",
+            "clientId": "mangled",
+            "clientSecret": "twisted",
+            "scopes": ["user"]
+          },
+          "provision": {
+            "uidPrefix": "github-",
+            "attribute": "login"
+          }
+        }
+      }
+    }
+  },
+  "name": "agama-openid"
+}
