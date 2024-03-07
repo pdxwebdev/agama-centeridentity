@@ -2,3 +2,19 @@
 Flow com.centeridentity.oidc
      Basepath ""
      Configs conf
+temp = {}
+When conf.dcr is not null and conf.dcr.enabled is true
+     // Perform client registration and grab config data
+     temp = Call org.gluu.inbound.oauth2.DCRUtil#registerClient conf.host conf.dcr.useCachedClient conf.oauth.redirectUri conf.oauth.scopes
+// Fill missing data in conf, if any, like client creds
+conf.oauth = Call org.gluu.inbound.oauth2.OAuthParams#update conf.oauth  temp conf.acrValues
+// Launch utility flow
+outcome = Trigger org.gluu.inbound.oauth2.AuthzCodeWithUserInfo conf.oauth
+When outcome.success is true
+     // Extract profile data (leaves token stuff aside)
+     profile = outcome.data.profile
+     // Do user provisioning and grab his uid
+     uid = Call org.gluu.inbound.UserOnboardHelper#exec conf.provision.uidPrefix conf.provision.attribute profile
+     // Finish returning the uid of the given user
+     Finish uid
+Finish outcome
