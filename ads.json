@@ -17,27 +17,11 @@
         "configs": {
             "com.centeridentity.oidc": {
                 "com.centeridentity.oidc": {
-                    "Gluu": {
-                        "host": "https://my.gluu.co",
-                        "dcr": {
-                            "enabled": true,
-                            "useCachedClient": true
-                        },
+                    "centeridentity": {
                         "oauth": {
-                            "scopes": [
-                                "openid"
-                            ]
-                        },
-                        "provision": {
-                            "uidPrefix": "gluu-",
-                            "attribute": "sub"
-                        }
-                    },
-                    "Github": {
-                        "oauth": {
-                            "authzEndpoint": "https://github.com/login/oauth/authorize",
-                            "tokenEndpoint": "https://github.com/login/oauth/access_token",
-                            "userInfoEndpoint": "https://api.github.com/user",
+                            "authzEndpoint": "https://centeridentity.com/oauth2/openid-login",
+                            "tokenEndpoint": "https://centeridentity.com/oauth2/openid-token",
+                            "userInfoEndpoint": "https://api.github.com/oauth2/openid-userinfo",
                             "clientId": "mangled",
                             "clientSecret": "twisted",
                             "scopes": [
@@ -45,7 +29,7 @@
                             ]
                         },
                         "provision": {
-                            "uidPrefix": "github-",
+                            "uidPrefix": "centeridentity-",
                             "attribute": "login"
                         }
                     }
