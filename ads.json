@@ -53,7 +53,7 @@
             },
             "": {
                 "com.centeridentity.oidc": {
-                    "centeridentity": {
+                    "Gluu": {
                         "host": "https://my.gluu.co",
                         "dcr": {
                             "enabled": true,
