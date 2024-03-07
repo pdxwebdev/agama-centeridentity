@@ -1,5 +1,5 @@
 // OpenId-based inbound identity flow
-Flow com.centeridentity.oidc
+Flow com.centeridentity.openid
      Basepath ""
      Configs conf
 obj = { providers: conf }
