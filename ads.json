@@ -16,23 +16,38 @@
         "noDirectLaunch": [],
         "configs": {
             "com.centeridentity.oidc": {
-                "com.centeridentity.oidc": {
-                    "oauth": {
-                        "authzEndpoint": "https://centeridentity.com/oauth2/openid-login",
-                        "tokenEndpoint": "https://centeridentity.com/oauth2/openid-token",
-                        "userInfoEndpoint": "https://api.github.com/oauth2/openid-userinfo",
-                        "clientId": "mangled",
-                        "clientSecret": "twisted",
-                        "scopes": [
-                            "user"
-                        ]
+                "org.gluu.inbound.openid": {
+                    "Gluu": {
+                        "host": "https://my.gluu.co",
+                        "dcr": {
+                            "enabled": true,
+                            "useCachedClient": true
+                        },
+                        "oauth": {
+                            "scopes": [
+                                "openid"
+                            ]
+                        },
+                        "provision": {
+                            "uidPrefix": "centeridentity-",
+                            "attribute": "sub"
+                        }
                     },
-                    "provision": {
-                        "uidPrefix": "centeridentity-",
-                        "attribute": "login"
-                    },
-                    "dcr": {
-                        "enabled": true
+                    "Github": {
+                        "oauth": {
+                            "authzEndpoint": "https://github.com/login/oauth/authorize",
+                            "tokenEndpoint": "https://github.com/login/oauth/access_token",
+                            "userInfoEndpoint": "https://api.github.com/user",
+                            "clientId": "mangled",
+                            "clientSecret": "twisted",
+                            "scopes": [
+                                "user"
+                            ]
+                        },
+                        "provision": {
+                            "uidPrefix": "github-",
+                            "attribute": "login"
+                        }
                     }
                 }
             }
