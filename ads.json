@@ -16,7 +16,7 @@
         "noDirectLaunch": [],
         "configs": {
             "com.centeridentity.oidc": {
-                "com.centeridentity.openid": {
+                "com.centeridentity.oidc": {
                     "Gluu": {
                         "host": "https://my.gluu.co",
                         "dcr": {
