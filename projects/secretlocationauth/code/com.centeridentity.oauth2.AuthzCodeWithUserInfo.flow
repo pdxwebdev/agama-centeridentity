@@ -1,8 +1,8 @@
-Flow org.gluu.inbound.oauth2.AuthzCodeWithUserInfo
+Flow com.centeridentity.oauth2.AuthzCodeWithUserInfo
      Basepath ""
      Inputs oauthParams
 // Launches the code flow
-outcome = Trigger org.gluu.inbound.oauth2.AuthzCode oauthParams
+outcome = Trigger com.centeridentity.oauth2.AuthzCode oauthParams
 // Extracts the access token required for requesting UserInfo
 token = outcome.data.access_token
 // Calls the userinfo endpoint and parses the request as a map

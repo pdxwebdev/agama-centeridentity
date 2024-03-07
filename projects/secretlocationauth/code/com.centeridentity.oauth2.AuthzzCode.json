@@ -897,7 +897,7 @@
           "conditionInputField": "",
           "valueField": "",
           "returnVariable": "",
-          "javaClassName": "org.gluu.inbound.oauth2.CodeGrantUtil",
+          "javaClassName": "com.centeridentity.oauth2.CodeGrantUtil",
           "javaMethodName": "",
           "javaVariableName": "",
           "maxIterationVariableName": "",
@@ -1078,7 +1078,7 @@
           "timeout": "",
           "inputs": "oauthParams",
           "configs": "",
-          "flowname": "org.gluu.inbound.oauth2.AuthzCode"
+          "flowname": "com.centeridentity.oauth2.AuthzCode"
         },
         "skake": false
       },
