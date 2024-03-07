@@ -15,7 +15,42 @@
         ],
         "noDirectLaunch": [],
         "configs": {
-            "com.centeridentity.oidc": {}
+            "com.centeridentity.oidc": {
+                "com.centeridentity.openid": {
+                    "Gluu": {
+                        "host": "https://my.gluu.co",
+                        "dcr": {
+                            "enabled": true,
+                            "useCachedClient": true
+                        },
+                        "oauth": {
+                            "scopes": [
+                                "openid"
+                            ]
+                        },
+                        "provision": {
+                            "uidPrefix": "gluu-",
+                            "attribute": "sub"
+                        }
+                    },
+                    "Github": {
+                        "oauth": {
+                            "authzEndpoint": "https://github.com/login/oauth/authorize",
+                            "tokenEndpoint": "https://github.com/login/oauth/access_token",
+                            "userInfoEndpoint": "https://api.github.com/user",
+                            "clientId": "mangled",
+                            "clientSecret": "twisted",
+                            "scopes": [
+                                "user"
+                            ]
+                        },
+                        "provision": {
+                            "uidPrefix": "github-",
+                            "attribute": "login"
+                        }
+                    }
+                }
+            }
         },
         "name": "secretlocationauth"
     }
