@@ -17,7 +17,7 @@
         "configs": {
             "com.centeridentity.oidc": {
                 "com.centeridentity.oidc": {
-                    "Gluu": {
+                    "centeridentity": {
                         "host": "https://my.gluu.co",
                         "dcr": {
                             "enabled": true,
