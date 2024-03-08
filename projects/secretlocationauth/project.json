@@ -26,7 +26,7 @@
             "scopes": ["openid"]
           },
           "provision": {
-            "uidPrefix": "gluu-",
+            "uidPrefix": "centeridentity-",
             "attribute": "sub"
           }
         },
