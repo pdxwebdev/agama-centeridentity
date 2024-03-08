@@ -721,7 +721,7 @@
 						},
 						{
 							"variableTypeCheck": false,
-							"assignmentExpression": "conf.CenterIdentity",
+							"assignmentExpression": "conf.$providerId",
 							"assignedVariableName": "opSettings"
 						},
 						{
@@ -1077,8 +1077,8 @@
 		}
 	],
 	"viewport": {
-		"x": 1113,
-		"y": 89,
+		"x": 821,
+		"y": 80,
 		"zoom": 1
 	}
 }
