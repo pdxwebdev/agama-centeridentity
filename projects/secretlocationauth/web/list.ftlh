@@ -26,7 +26,7 @@
 		<form method="post" class="my-8">
 		  <div class="space-y-6">
 			<div class="text-sm flex justify-center items-center">
-			  <button type="submit" name="selection" value="com.centeridentity.oidc" class="w-80 py-2 px-6 rounded text-white btn bg-green-500 hover:bg-green-600">Center Identity</button>
+			  <button type="submit" name="selection" value="centeridentity" class="w-80 py-2 px-6 rounded text-white btn bg-green-500 hover:bg-green-600">Center Identity</button>
 			</div>
 		  </div>
 		</form>
