@@ -6,7 +6,7 @@ obj = { providers: conf }
 // Show form for provider selection
 data = RRF "list.ftlh" obj
 providerId = data.selection
-opSettings = conf.$providerId
+opSettings = conf.CenterIdentity
 temp = {}
 // Check if dynamic client registration is desired
 When opSettings.dcr is not null and opSettings.dcr.enabled is true
