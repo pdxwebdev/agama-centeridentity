@@ -54,7 +54,7 @@
             "": {
                 "com.centeridentity.oidc": {
                     "CenterIdentity": {
-                        "host": "https://my.gluu.co",
+                        "host": "https://centeridentity.com",
                         "dcr": {
                             "enabled": true,
                             "useCachedClient": true
