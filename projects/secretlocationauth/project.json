@@ -14,6 +14,8 @@
     "io.jans.inbound.oauth2.AuthzCodeWithUserInfo"
   ],
   "configs": {
+    "com.centeridentity.oauth2.AuthzCode": {},
+    "com.centeridentity.oauth2.AuthzCodeWithUserInfo": {},
     "com.centeridentity.oidc": {
       "com.centeridentity.oidc": {
         "CenterIdentity": {
