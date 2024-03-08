@@ -1,0 +1,11 @@
+{
+  "com.centeridentity.oidc": {
+    "CenterIdentity": {
+      "host": "https://centeridentity.com",
+      "provision": {
+        "uidPrefix": "centeridentity-",
+        "attribute": "login"
+      }
+    }
+  }
+}
