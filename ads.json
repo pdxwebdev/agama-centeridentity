@@ -15,7 +15,7 @@
       "com.centeridentity.oidc": {
         "com.centeridentity.oidc": {
           "CenterIdentity": {
-            "host": "lhttp://ocalhost:8005",
+            "host": "http://ocalhost:8005",
             "dcr": {
               "enabled": true,
               "useCachedClient": true
@@ -47,7 +47,7 @@
       "": {
         "com.centeridentity.oidc": {
           "CenterIdentity": {
-            "host": "lhttp://ocalhost:8005",
+            "host": "http://ocalhost:8005",
             "dcr": {
               "enabled": true,
               "useCachedClient": true
