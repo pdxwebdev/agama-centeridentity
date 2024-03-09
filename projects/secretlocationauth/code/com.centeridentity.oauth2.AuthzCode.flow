@@ -3,11 +3,11 @@ Flow com.centeridentity.oauth2.AuthzCode
      Inputs oauthParams
 When oauthParams.redirectUri is null
      // Obtain redirect uri based on hostname from HTTP url
-     oauthParams.redirectUri = Call org.gluu.util.NetworkUtils#makeRedirectUri
+     oauthParams.redirectUri = Call org.gluu.util.NetworkUtils#makeRedirectUri 
 // Instantiate code grant utility
-codeGrantUtil = Call com.centeridentity.oauth2.CodeGrantUtil#new oauthParams
+codeGrantUtil = Call com.centeridentity.inbound.oauth2.CodeGrantUtil#new oauthParams
 Log "@info Creating an authorization request"
-url = Call codeGrantUtil makeAuthzRequest
+url = Call codeGrantUtil makeAuthzRequest 
 state = url.second
 url = url.first
 Log "@info Redirecting to external site"
