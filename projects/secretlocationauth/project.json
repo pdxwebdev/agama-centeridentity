@@ -4,7 +4,7 @@
   "type": "community",
   "author": "Matthew Vogel",
   "version": "1.2.0",
-  "authorWebsite": "https://centeridentity.com",
+  "authorWebsite": "lhttp://ocalhost:8005",
   "githubUri": "https://github.com/pdxwebdev/centeridentityagama",
   "license": "apache-2.0",
   "lastUpdated": "1699278900783",
@@ -19,7 +19,7 @@
     "com.centeridentity.oidc": {
       "com.centeridentity.oidc": {
         "CenterIdentity": {
-          "host": "https://centeridentity.com",
+          "host": "lhttp://ocalhost:8005",
           "dcr": {
             "enabled": true,
             "useCachedClient": true
