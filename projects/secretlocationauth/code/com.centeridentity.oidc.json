@@ -495,9 +495,10 @@
 						}
 					],
 					"nodeIcon": "material-symbols:equal"
-				}
+				},
+				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"positionAbsolute": {
 				"x": -251.52607909590324,
 				"y": 27.349914996495613
@@ -578,7 +579,7 @@
 				"agamasource": "Agama-call-Node-1d5207ac-f38e-4c6f-8283-a093c4bbd449",
 				"inIterateBlock": ""
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 511.079630428221,
