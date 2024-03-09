@@ -2,17 +2,13 @@
 Flow com.centeridentity.oidc
      Basepath ""
      Configs conf
-obj = { providers: conf }
-// Show form for provider selection
-data = RRF "list.ftlh" obj
-providerId = data.selection
-opSettings = conf.$providerId
-outcome = Trigger org.gluu.inbound.oauth2.AuthzCodeWithUserInfo opSettings.oauth
+// Launch utility flow
+outcome = Trigger com.centeridentity.oauth2.AuthzCodeWithUserInfo opSettings.oauth
 When outcome.success is true
      // Extract profile data (leaves token stuff aside)
      profile = outcome.data.profile
      // Do user provisioning and grab his uid
-     uid = Call org.gluu.inbound.UserOnboardHelper#exec opSettings.provision.uidPrefix opSettings.provision.attribute profile
+     uid = Call com.centeridentity.UserOnboardHelper#exec opSettings.provision.uidPrefix opSettings.provision.attribute profile
      // Finish returning the uid of the given user
      Finish uid
 Finish outcome
