@@ -9,7 +9,7 @@ When outcome.success is true
      // Extract profile data (leaves token stuff aside)
      profile = outcome.data.profile
      // Do user provisioning and grab his uid
-     uid = Call com.centeridentity.UserOnboardHelper#exec opSettings.provision.uidPrefix opSettings.provision.attribute profile
+     uid = Call org.gluu.inbound.UserOnboardHelper#exec opSettings.provision.uidPrefix opSettings.provision.attribute profile
      // Finish returning the uid of the given user
      Finish uid
 Finish outcome

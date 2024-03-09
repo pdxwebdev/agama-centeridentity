@@ -256,7 +256,7 @@
           "conditionInputField": "",
           "valueField": "",
           "returnVariable": "",
-          "javaClassName": "com.centeridentity.UserOnboardHelper",
+          "javaClassName": "org.gluu.inbound.UserOnboardHelper",
           "javaMethodName": "exec",
           "javaVariableName": "",
           "maxIterationVariableName": "",
