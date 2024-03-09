@@ -57,7 +57,7 @@ public class CodeGrantUtil {
 
         URI callback = new URI(p.getRedirectUri());
         AuthorizationResponse response = AuthorizationResponse.parse(callback, toMultivaluedMap(urlParams));
-
+        logger.debug("{} {}", state, response.getState().getValue());
         if (!state.equals(response.getState().getValue())) {
             throw new GeneralException("Unexpected or tampered response");
         }
