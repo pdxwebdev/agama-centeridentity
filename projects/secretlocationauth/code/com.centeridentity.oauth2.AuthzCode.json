@@ -906,7 +906,7 @@
 					"conditionInputField": "",
 					"valueField": "",
 					"returnVariable": "",
-					"javaClassName": "com.centeridentity.inbound.oauth2.CodeGrantUtil",
+					"javaClassName": "org.gluu.inbound.oauth2.CodeGrantUtil",
 					"javaMethodName": "",
 					"javaVariableName": "",
 					"maxIterationVariableName": "",
