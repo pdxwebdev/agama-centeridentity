@@ -11,7 +11,7 @@
       },
       "provision": {
         "uidPrefix": "centeridentity-",
-        "attribute": "login"
+        "attribute": "user_id"
       }
     }
   }
