@@ -2,9 +2,9 @@
   "com.centeridentity.oidc": {
     "CenterIdentity": {
       "oauth": {
-        "authzEndpoint": "http://localhost:8005/oauth2/openid-login",
-        "tokenEndpoint": "http://localhost:8005/oauth2/openid-token",
-        "userInfoEndpoint": "http://localhost:8005/oauth2/openid-userinfo",
+        "authzEndpoint": "https://centeridentity.com/oauth2/openid-login",
+        "tokenEndpoint": "https://centeridentity.com/oauth2/openid-token",
+        "userInfoEndpoint": "https://centeridentity.com/oauth2/openid-userinfo",
         "clientId": "mangled",
         "clientSecret": "twisted",
         "scopes": ["user"]
